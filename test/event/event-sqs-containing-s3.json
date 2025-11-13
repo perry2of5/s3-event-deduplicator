@@ -1,44 +1,18 @@
 {
-    'Records': [{
-        'messageId': '41770aaa-7962-4126-941c-971eb3c52fa1',
-        'receiptHandle': 'AQEB5LJS/ddX+AxLzgGmPhx7zuTM12uLFrRWdPIWcjbwseesbPl3w7g47oz7IRrY35uqyk0ZFIbDNAsnL0vma4jjp97BBxyNVZC0Bys4+5XC6Kh4vG6OMmLa42h1WnK1Tx4RCtjSCqy2dZVzEdLKtELOCSEsUqtWtLylWWXDCM4L5QzyE8mmYY2/KRv4Xay2/bFMdLtPDzhhO67YoRZXSOraKzcbAqOXCFIDi5zk/dqLsAtQ7MglMrsLw+5jisxK38h7bEJDWWuBaFJArzIrBSXe86Bp7ltvEWefK3b6uL0ThLG0RlWesKHVwjvej96DXkljBQBFqg1y6uQpIcrfgm7yQLprTnwglbI2+4DdgJ5ECvz3s39YoQE6ggy3fz1jJZtrzZUiVIlFJChycrY2JT8kKA==',
-        'body': '{
-            "Records":[{
-                "eventVersion":"2.1",
-                "eventSource":"aws:s3",
-                "awsRegion":"us-west-2",
-                "eventTime":"2025-11-11T23:42:13.389Z",
-                "eventName":"ObjectCreated:Put",
-                "userIdentity":{"principalId":"AWS:AROA5YOYL3JITLU5AMAD5:tim.v2.0"},
-                "requestParameters":{"sourceIPAddress":"108.204.120.162"},
-                "responseElements":{"x-amz-request-id":"4NVJK6GYEXYNQN5S","x-amz-id-2":"KP3Cqu0VfsPQnqAglz73qsKhHG05PlZ1R9ef4x9yEl6gN/PN66L2GZojBWqsTWIb0IZIc6X/nD8vR0mVROz+LaWtFYZbbdJm"},
-                "s3":{
-                    "s3SchemaVersion":"1.0",
-                    "configurationId":"tf-s3-queue-20251111220326415300000001",
-                    "bucket":{
-                        "name":"prod-bucket",
-                        "ownerIdentity":{"principalId":"AQ5YJ4D6VWR5G"},
-                        "arn":"arn:aws:s3:::prod-bucket"
-                    },
-                    "object":{
-                        "key":"content003.txt",
-                        "size":60,
-                        "eTag":"85ebd2477e15eae94bb3d678071f3ca1",
-                        "sequencer":"006913C9D55E7D349C"
-                    }
-                }
-            }]
-        }',
-        'attributes': {
-            'ApproximateReceiveCount': '1',
-            'SentTimestamp': '1762904533974',
-            'SenderId': 'AROAUWHQT37XQVCB4XU5S:S3-PROD-END',
-            'ApproximateFirstReceiveTimestamp': '1762904533981'
+    "Records": [{
+        "messageId": "41770aaa-7962-4126-941c-971eb3c52fa1",
+        "receiptHandle": "AQEB5LJS/ddX+AxLzgGmPhx7zuTM12uLFrRWdPIWcjbwseesbPl3w7g47oz7IRrY35uqyk0ZFIbDNAsnL0vma4jjp97BBxyNVZC0Bys4+5XC6Kh4vG6OMmLa42h1WnK1Tx4RCtjSCqy2dZVzEdLKtELOCSEsUqtWtLylWWXDCM4L5QzyE8mmYY2/KRv4Xay2/bFMdLtPDzhhO67YoRZXSOraKzcbAqOXCFIDi5zk/dqLsAtQ7MglMrsLw+5jisxK38h7bEJDWWuBaFJArzIrBSXe86Bp7ltvEWefK3b6uL0ThLG0RlWesKHVwjvej96DXkljBQBFqg1y6uQpIcrfgm7yQLprTnwglbI2+4DdgJ5ECvz3s39YoQE6ggy3fz1jJZtrzZUiVIlFJChycrY2JT8kKA==",
+        "body": "{ \"Records\":[{ \"eventVersion\":\"2.1\", \"eventSource\":\"aws:s3\", \"awsRegion\":\"us-west-2\", \"eventTime\":\"2025-11-11T23:42:13.389Z\", \"eventName\":\"ObjectCreated:Put\", \"userIdentity\":{\"principalId\":\"AWS:AROA5YOYL3JITLU5AMAD5:some-user.v2.0\"}, \"requestParameters\":{\"sourceIPAddress\":\"108.204.120.162\"}, \"responseElements\":{\"x-amz-request-id\":\"4NVJK6GYEXYNQN5S\",\"x-amz-id-2\":\"KP3Cqu0VfsPQnqAglz73qsKhHG05PlZ1R9ef4x9yEl6gN/PN66L2GZojBWqsTWIb0IZIc6X/nD8vR0mVROz+LaWtFYZbbdJm\"}, \"s3\":{ \"s3SchemaVersion\":\"1.0\", \"configurationId\":\"tf-s3-queue-20251111220326415300000001\", \"bucket\":{ \"name\":\"prod-bucket\", \"ownerIdentity\":{\"principalId\":\"AQ5YJ4D6VWR5G\"}, \"arn\":\"arn:aws:s3:::prod-bucket\" }, \"object\":{ \"key\":\"content003.txt\", \"size\":60, \"eTag\":\"85ebd2477e15eae94bb3d678071f3ca1\", \"sequencer\":\"006913C9D55E7D349C\" } } }] }",
+        "attributes": {
+            "ApproximateReceiveCount": "1",
+            "SentTimestamp": "1762904533974",
+            "SenderId": "AROAUWHQT37XQVCB4XU5S:S3-PROD-END",
+            "ApproximateFirstReceiveTimestamp": "1762904533981"
         },
-        'messageAttributes': {},
-        'md5OfBody': 'c9a5a9efd100af460b026ba445f90e92',
-        'eventSource': 'aws:sqs',
-        'eventSourceARN':'arn:aws:sqs:us-west-2:9accountID9:s3_event_raw_queue',
-        'awsRegion': 'us-west-2'
+        "messageAttributes": {},
+        "md5OfBody": "c9a5a9efd100af460b026ba445f90e92",
+        "eventSource": "aws:sqs",
+        "eventSourceARN":"arn:aws:sqs:us-west-2:9accountID9:s3_event_raw_queue",
+        "awsRegion": "us-west-2"
     }]
 }
